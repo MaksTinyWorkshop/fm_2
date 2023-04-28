@@ -24,8 +24,8 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/MaksTinyWorkshop/fm_2)
+- Live Site URL: [Add live site URL here](https://makstinyworkshop.github.io/fm_2/)
 
 ## My process
 
@@ -35,7 +35,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 
 ### What I learned
 
@@ -45,6 +44,9 @@ Here I was able to understand the GRID basics and use media queries to make the 
 
 - Frontend Mentor - [@MaksTinyWorkshop](https://www.frontendmentor.io/profile/makstinyworkshop)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
 ## Acknowledgments
+
+thans to :
+@kieranpdev
+@Shivraj-K09
+who gave me some advices.
