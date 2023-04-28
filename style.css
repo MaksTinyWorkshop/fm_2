@@ -1,0 +1,174 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+/* GENERAL SETTINGS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 400;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* GLOBAL CONTAINER SETTINGS */
+
+.container {
+    width: 600px;
+    height: 450px;
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .left,
+.container .right {
+    width: 50%;
+}
+
+/* THIS LINE WILL BE USEFUL IN RESPONSIVE */
+.container .left .responsive-image {
+    display: none;
+}
+
+/* ______ */
+
+.container .left img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.attribution {
+    position: absolute;
+    font-size: 11px;
+    text-align: center;
+    bottom: 0%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* GRID ATTEMPT */
+.container .right {
+    display: grid;
+    padding: 1.5em;
+    grid-template-areas:
+        "h2 h2"
+        "h1 h1"
+        "p p"
+        "price1 price2"
+        "button button";
+}
+
+.container .right>h2 {
+    grid-area: h2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9em;
+    font-weight: 400;
+    letter-spacing: .5em;
+    color: hsl(228, 12%, 48%);
+
+}
+
+.container .right>h1 {
+    grid-area: h1;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2.2em;
+    color: hsl(212, 21%, 14%);
+}
+
+.container .right>.one {
+    grid-area: p;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9em;
+    line-height: 1.8em;
+    font-weight: 400;
+    color: hsl(228, 12%, 48%);
+}
+
+.container .right>.two {
+    grid-area: price1;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2.2em;
+    line-height: 50px;
+    color: hsl(158, 36%, 37%);
+}
+
+.container .right>.three {
+    grid-area: price2;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    line-height: 50px;
+    text-decoration: line-through;
+}
+
+.container .right>a {
+    height: 50px;
+    grid-area: button;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .right>a:hover {
+    background-color: #194032;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:610px) {
+
+    /* THIS STEP JUST COPY/PASTE GENERAL SETTINGS WITH LITTLE CHANGES */
+
+    .container {
+        width: 350px;
+        height: 610px;
+        flex-direction: column;
+    }
+
+    .container .right {
+        grid-template-columns: 2fr 1.5fr;
+    }
+
+    .container .left,
+    .container .right {
+        width: 100%;
+    }
+
+    .container .left .responsive-image {
+        display: block;
+    }
+
+    .container .left .full-size-image {
+        display: none;
+    }
+
+    .container .right {
+        padding: 20px;
+    }
+
+    .container .right>h1 {
+        line-height: 35px;
+        padding: 10px 0;
+    }
+
+}

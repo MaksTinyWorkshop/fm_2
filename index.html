@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+    <!-- LIEN FONT_AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/ec4f5c9987.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- LIEN CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <!-- LEFT CONTAINER MOVIN ON TOP ON SMALLER SCREENS -->
+      <div class="left">
+        <img
+          class="full-size-image"
+          src="images/image-product-desktop.jpg"
+          alt="Product Picture"
+        />
+        <img
+          class="responsive-image"
+          src="images/image-product-mobile.jpg"
+          alt="Product Picture"
+        />
+      </div>
+
+      <!-- RIGHT CONTAINER MOVING TO THE BOTTOM -->
+      <div class="right">
+        <h2>PERFUME</h2>
+        <h1>Gabrielle Essence Eau de Parfum</h1>
+        <p class="one">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the house of <strong>CHANEL</strong>
+        </p>
+        <p class="two">$149.99</p>
+        <p class="three">$169.99</p>
+        <a href="#">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <!-- CHEATING HERE WITH &nbsp; COMMAND INSTEAD OF CSS  -->
+          <p>&nbsp;&nbsp;&nbsp;Add to Cart</p>
+        </a>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">DiNoDev</a>.
+    </footer>
+  </body>
+</html>
